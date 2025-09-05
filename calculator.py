@@ -28,10 +28,9 @@ class Calculator:
             return "Error: Division by zero"
             return num1 / num2
 
-# Example usage:
 calc = Calculator()
-print(calc.add(5, 3))  # Output: 8
-print(calc.subtract(10, 4))  # Output: 6
-print(calc.multiply(7, 2))  # Output: 14
-print(calc.divide(10, 2))  # Output: 5.0
-print(calc.divide(10, 0))  # Output: "Error: Division by zero"
+print(calc.add(5, 3)) 
+print(calc.subtract(10, 4))  
+print(calc.multiply(7, 2))  
+print(calc.divide(10, 5))
+print(calc.divide(100, 0)) 
