@@ -12,3 +12,26 @@ Example Usage:
     print(calc.add(5, 3))        # 8
     print(calc.divide(10, 0))    # "Error: Division by zero"
 """
+
+class Calculator:
+    def add(self, num1, num2):
+        return num1 + num2
+
+    def subtract(self, num1, num2):
+        return num1 - num2
+
+    def multiply(self, num1, num2):
+        return num1 * num2
+
+    def divide(self, num1, num2):
+        if num2 == 0:
+            return "Error: Division by zero"
+            return num1 / num2
+
+# Example usage:
+calc = Calculator()
+print(calc.add(5, 3))  # Output: 8
+print(calc.subtract(10, 4))  # Output: 6
+print(calc.multiply(7, 2))  # Output: 14
+print(calc.divide(10, 2))  # Output: 5.0
+print(calc.divide(10, 0))  # Output: "Error: Division by zero"
